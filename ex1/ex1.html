@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { font-size: 3rem;}
+    h1{
+        background:#fff000;
+    }
+    .lee {
+        display: inline-block;
+        list-style: none;
+    }
+    .lee img{
+        width: 300px
+    }
+    .special{
+        background: pink;
+    }
+    .link-naver{
+        color:red;
+    }
+    .btn {
+        font-size: 2rem;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">
+       Event
+    </h1>
+    <ul class="le">
+        <li class="lee">
+            <img src="a.jpg">
+            <a class="link-naver" href="https://naver.com">naver</a>
+        </li>
+        <li class="lee"><img src="b.png"></li>
+        <li class="lee"><img src="a.jpg"></li>
+    </ul>
+    
+    <button class="btn">클릭하세요!</button>
+    
+    <script>
+    var btn = document.querySelector('.btn');
+    var mainTitle = document.querySelector('#main-title');
+    
+    function btnClickHandler(){
+        mainTitle.style.background = 'dodgerblue';
+    }
+
+    btn.addEventListener('click',btnClickHandler);
+    </script>
+ 
+</body>
+</html>
